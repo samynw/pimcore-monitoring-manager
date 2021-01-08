@@ -1,0 +1,36 @@
+{
+    "name": "samynw/pimcore-monitoring-manager",
+    "description": "This setups up endpoints for monitoring tasks",
+    "type": "pimcore-bundle",
+    "require": {
+        "pimcore/pimcore": "^6.8.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Wouter Samyn",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "MonitoringManagerBundle\\": "src/"
+      }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MonitoringManagerBundle\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "pimcore": {
+            "bundles": [
+                "MonitoringManagerBundle\\MonitoringManagerBundle"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require-dev": {
+        "symfony/phpunit-bridge": "5.x-dev"
+    }
+}
