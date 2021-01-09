@@ -33,5 +33,10 @@ services:
         tags: [ 'monitoring_manager.job' ]
         public: true
 
+    MonitoringManagerBundle\Service\Listing\AvailableJobs:
+        arguments:
+            $jobs: !tagged_iterator monitoring_manager.job
+
+    MonitoringManagerBundle\Service\Listing\EnabledJobs: ~
     MonitoringManagerBundle\Config\Dao: ~
     MonitoringManagerBundle\Config\MonitoringConfig: ~
