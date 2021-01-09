@@ -23,5 +23,15 @@ services:
 #            - "plain_value"
 #            - "%parameter%"
 
+    MonitoringManagerBundle\Service\Jobs\PackageChecker:
+        arguments:
+            $projectRoot: "%kernel.project_dir%"
+        tags: [ 'monitoring_manager.job' ]
+        public: true
+
+    MonitoringManagerBundle\Service\Jobs\CoffeeMaker:
+        tags: [ 'monitoring_manager.job' ]
+        public: true
+
     MonitoringManagerBundle\Config\Dao: ~
     MonitoringManagerBundle\Config\MonitoringConfig: ~
