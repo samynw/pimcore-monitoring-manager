@@ -1,0 +1,10 @@
+security:
+
+    firewalls:
+        monitoring:
+            pattern: ^/monitoring\/status\/(.*)?$
+            stateless: true
+            provider: pimcore_admin
+            guard:
+                authenticators:
+                    - Pimcore\Bundle\AdminBundle\Security\Guard\WebserviceAuthenticator
