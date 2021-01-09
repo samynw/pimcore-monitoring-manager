@@ -23,6 +23,11 @@ services:
 #            - "plain_value"
 #            - "%parameter%"
 
+    # auto-register all commands as services
+    MonitoringManagerBundle\Command\:
+        resource: '../../Command/*'
+        tags: ['console.command']
+
     MonitoringManagerBundle\Service\Jobs\PackageChecker:
         arguments:
             $projectRoot: "%kernel.project_dir%"
