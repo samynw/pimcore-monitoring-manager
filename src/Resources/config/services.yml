@@ -22,3 +22,6 @@ services:
 #            - "@service_id"
 #            - "plain_value"
 #            - "%parameter%"
+
+    MonitoringManagerBundle\Config\Dao: ~
+    MonitoringManagerBundle\Config\MonitoringConfig: ~
