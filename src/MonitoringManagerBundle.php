@@ -3,13 +3,17 @@
 namespace MonitoringManagerBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
+use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 
 class MonitoringManagerBundle extends AbstractPimcoreBundle
 {
-    public function getJsPaths()
+    use PackageVersionTrait;
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function getComposerPackageName(): string
     {
-        return [
-            '/bundles/monitoringmanager/js/pimcore/startup.js'
-        ];
+        return 'samynw/pimcore-monitoring-manager';
     }
 }

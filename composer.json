@@ -1,6 +1,6 @@
 {
     "name": "samynw/pimcore-monitoring-manager",
-    "description": "This setups up endpoints for monitoring tasks",
+    "description": "This bundle sets up endpoints for monitoring tasks",
     "type": "pimcore-bundle",
     "require": {
         "pimcore/pimcore": "^6.8.0"
