@@ -23,6 +23,11 @@ services:
 #            - "plain_value"
 #            - "%parameter%"
 
+    MonitoringManagerBundle\Installer:
+        public: true
+        arguments:
+            $bundle: "@=service('kernel').getBundle('MonitoringManagerBundle')"
+
     # auto-register all commands as services
     MonitoringManagerBundle\Command\:
         resource: '../../Command/*'

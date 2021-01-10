@@ -23,7 +23,14 @@ composer require samynw/pimcore-monitoring-manager
 
 # Enable and install bundle
 php bin/console pimcore:bundle:enable MonitoringManagerBundle
+php bin/console pimcore:bundle:install MonitoringManagerBundle
 ```
+
+Note: the installer will
+- enable the webservice API
+- create a "monitoring" user with a random API key
+
+You can review and modify or remove the user at your convenience if you prefer to use another user or authentication method.
 
 ## Usage
 

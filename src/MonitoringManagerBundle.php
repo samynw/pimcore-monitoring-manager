@@ -3,6 +3,7 @@
 namespace MonitoringManagerBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
+use Pimcore\Extension\Bundle\Installer\InstallerInterface;
 use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 
 class MonitoringManagerBundle extends AbstractPimcoreBundle
@@ -16,4 +17,15 @@ class MonitoringManagerBundle extends AbstractPimcoreBundle
     {
         return 'samynw/pimcore-monitoring-manager';
     }
+
+    /**
+     * Return the bundle installer
+     *
+     * @return InstallerInterface
+     */
+    public function getInstaller()
+    {
+        return $this->container->get(Installer::class);
+    }
+
 }
