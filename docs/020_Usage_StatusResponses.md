@@ -6,6 +6,9 @@ You probably don't want to expose the status codes to just anyone.
 
 By default the monitoring endpoint uses Symfony guard with the `WebserviceAuthenticator`.
 So the call should be performed with an API key.
+
+The Installer will create a "monitoring" user with a random API key (64 characters).
+
 The API key can be added as HTTP header (or if your monitoring tool doesn't support header configuration, you can pass it as query string, however this is not the preferred method).
 > The recommended way of passing API Key for webservice is through HTTP header X-API-Key however you can still use query parameter method
 
