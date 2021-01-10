@@ -31,7 +31,7 @@ Failure:
 
 ## Console commands instead of HTTP requests
 
-Optionally you could let the server perform the `monitoring:job:details` call 
+Optionally you could let the server perform the `monitoring:job:details` command 
 and process the command exit code instead of the HTTP request. 
 This would not require authentication, but your monitoring software has to support this.
 

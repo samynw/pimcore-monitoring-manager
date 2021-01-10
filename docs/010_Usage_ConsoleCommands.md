@@ -115,3 +115,5 @@ Status details
  [OK] Status check passed
 
 ```
+
+_Note_: if the job returns a Failure status, the `monitor:job:details` command will exit with the code defined in the Failure class.
