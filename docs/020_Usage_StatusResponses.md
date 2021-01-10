@@ -22,9 +22,11 @@ For example:
 - ... 
 
 Success:
+
 ![Status: success](img/020_Usage_HttpRequests_01_Status_Success.png "Status: success")
 
 Failure:
+
 ![Status: failure](img/020_Usage_HttpRequests_02_Status_Failure.png "Status: failure")
 
 ## Console commands instead of HTTP requests
