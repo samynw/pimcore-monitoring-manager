@@ -2,7 +2,7 @@ security:
 
     firewalls:
         monitoring:
-            pattern: ^/monitoring\/status\/(.*)?$
+            pattern: ^/monitoring\/(overview|status\/(.*)?)$
             stateless: true
             provider: pimcore_admin
             guard:
