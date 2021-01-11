@@ -65,12 +65,20 @@
             sender.addClass('badge-success');
             sender.text('success');
         }).fail(function (e) {
-            if (e.status === 404) {
-                sender.addClass('badge-warning');
-                sender.text('not found');
-            } else {
-                sender.addClass('badge-danger');
-                sender.text('failure');
+            switch (e.status) {
+                case 401:
+                case 403:
+                    sender.addClass('badge-warning');
+                    sender.text('unauthorized');
+                    break;
+                case 404:
+                    sender.addClass('badge-warning');
+                    sender.text('not found');
+                    break;
+                default:
+                    sender.addClass('badge-danger');
+                    sender.text('failure');
+                    break;
             }
         }).always(function (e, type) {
             if (type === 'error' && (typeof e) === 'object') {
