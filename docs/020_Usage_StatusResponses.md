@@ -55,3 +55,14 @@ $ php bin/console monitoring:job:details coffee-maker --quiet
 $ echo $?
 129
 ```
+
+## Overview page
+
+An overview page is added to give a quick glimpse of the status of the active jobs.
+It's available under the route `monitoring/overview` (which will need an active backoffice session, or an API key).
+Or available as an extra item in the "Tools" menu in the Pimcore interface.
+
+
+![Menu entry](img/020_Usage_HttpRequests_10_Overview_Menu.png "Menu entry")
+
+![Overview page](img/020_Usage_HttpRequests_11_Overview_page.png "Overview page")
