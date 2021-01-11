@@ -28,4 +28,13 @@ class MonitoringManagerBundle extends AbstractPimcoreBundle
         return $this->container->get(Installer::class);
     }
 
+    /**
+     * @return string[]
+     */
+    public function getJsPaths()
+    {
+        return [
+            '/bundles/monitoringmanager/js/pimcore/startup.js'
+        ];
+    }
 }
