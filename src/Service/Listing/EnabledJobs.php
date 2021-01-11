@@ -30,6 +30,21 @@ class EnabledJobs
     }
 
     /**
+     * Sort the jobs by key before returning
+     *
+     * @return ArrayCollection<string, Entry>
+     * @throws \Exception
+     */
+    public function getJobsSortedByKey(): ArrayCollection
+    {
+        $iterator = $this->getJobs()->getIterator();
+        $iterator->ksort();
+        $this->jobs = new ArrayCollection(\iterator_to_array($iterator));
+
+        return $this->jobs;
+    }
+
+    /**
      * Get a job by its (string) ID
      *
      * @param string $id
