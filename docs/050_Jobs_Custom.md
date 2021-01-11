@@ -18,7 +18,7 @@ For example:
 ## Service config
 
 Your service must be public, and must be tagged as `monitoring_manager.job`.
-All tagged services will be injected into the listing class, from then on you can active the job by using the console commands.
+All tagged services will be injected into the listing class, from then on you can activate the job by using the console commands.
 
 For example:
 ```yaml

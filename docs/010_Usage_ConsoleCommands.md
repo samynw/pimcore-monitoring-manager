@@ -37,7 +37,7 @@ There's a command which will prompt you the needed info:
 - the key (will be used as identifier and uri segment)
 
 The key must be unique. If not, the user will be asked to enter a new key. 
-By default an slugified version of the shortname of the service class is used.
+By default a slugified version of the shortname of the service class is used.
 
 ```shell
 $ php bin/console monitoring:job:enable
@@ -60,7 +60,7 @@ b) the URI segment in the route
 So choose a unique key for the job
 The key "package-checker" will translated to url "/monitoring/status/package-checker"
 
-Please enter a key for the service (default package-checker): package-ckecker
+Please enter a key for the service (default package-checker): package-checker
 
  [OK] Enabled monitoring job "package-checker".
 ```

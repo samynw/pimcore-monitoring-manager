@@ -5,7 +5,7 @@ It allows you to add custom jobs which can be monitored by your preferred monito
 The criteria could be any business logic, depending on the needs of your application.
 
 The bundle will create endpoints for your monitoring jobs. 
-So your monitoring tool can fetch the status code of the HTTP request and alert you if needed.
+So your monitoring tool can fetch the status code of the HTTP response and alert you if needed.
 Alternatively the exit code of a console command can be monitored.
 
 This way the monitoring tool can monitor _any_ application criteria you've defined.
@@ -51,7 +51,7 @@ Detailed information:
 
 ## Authorization
 
-The URL patters is added to a firewall, requiring authentication for the HTTP requests. 
+The URL pattern is added to a firewall, requiring authentication for the HTTP requests. 
 
 For further details, see [Usage: HTTP requests](docs/020_Usage_StatusResponses.md).
 

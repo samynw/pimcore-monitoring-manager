@@ -38,7 +38,7 @@ Optionally you could let the server perform the `monitoring:job:details` command
 and process the command exit code instead of the HTTP request. 
 This would not require authentication, but your monitoring software has to support this.
 
-_Note_: add the `--quiet` flag to suppress output
+_Note_: add the `--quiet` flag to suppress the detailed output
 
 ```shell
 $ php bin/console monitoring:job:details package-checker --quiet
