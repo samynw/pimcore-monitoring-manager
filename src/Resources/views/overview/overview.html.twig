@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <title>Status overview</title>
+</head>
+<body>
+<div class="container">
+    <h1 class="pt-4">Status overview</h1>
+
+    <p>
+        Below is a list of all currently active monitoring jobs. <br/>
+        Their current status will be fetched and rendered in realtime.
+    </p>
+
+    {% if jobs is defined and jobs is not empty %}
+        <table class="table table-striped table-hover border-bottom">
+            <thead class="thead-dark">
+                <th>Job</th>
+                <th>Status</th>
+            </thead>
+            <tbody>
+            {% for job in jobs %}
+                <tr>
+                    <td>
+                        <span class="font-weight-bold">{{ job.name }}</span>
+                        <span class="text-muted">({{ job.key }})</span> <br/>
+                        {{ job.description }}<br/>
+                    </td>
+                    <td>
+                        <span class="status-check badge badge-pill badge-secondary" data-endpoint="{{ job.endpoint }}">
+                            checking
+                        </span>
+                        <!-- <span class="badge badge-success">success</span>-->
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <div class="alert alert-warning">
+            No active jobs found.
+        </div>
+    {% endif %}
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    /**
+     * For each status item, fetch the HTTP response
+     * and update the status badge in the table
+     */
+    $('.status-check').each(function (index) {
+        var sender = $(this);
+        var endpoint = sender.attr('data-endpoint');
+        $.ajax({
+            url: endpoint,
+        }).done(function () {
+            sender.addClass('badge-success');
+            sender.text('success');
+        }).fail(function (e) {
+            switch (e.status) {
+                case 401:
+                case 403:
+                    sender.addClass('badge-warning');
+                    sender.text('unauthorized');
+                    break;
+                case 404:
+                    sender.addClass('badge-warning');
+                    sender.text('not found');
+                    break;
+                default:
+                    sender.addClass('badge-danger');
+                    sender.text('failure');
+                    break;
+            }
+        }).always(function (e, type) {
+            if (type === 'error' && (typeof e) === 'object') {
+                sender.attr('title', e.status + ': ' + e.statusText);
+            }
+            sender.removeClass('badge-pill');
+            sender.removeClass('badge-secondary');
+        });
+    });
+</script>
+</body>
+</html>
