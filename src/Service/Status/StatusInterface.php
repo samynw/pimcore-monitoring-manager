@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Status;
+namespace Samynw\MonitoringManagerBundle\Service\Status;
 
 interface StatusInterface
 {

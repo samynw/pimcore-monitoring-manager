@@ -1,8 +1,8 @@
 <?php
 
-namespace MonitoringManagerBundle\Model\View;
+namespace Samynw\MonitoringManagerBundle\Model\View;
 
-use MonitoringManagerBundle\Service\Jobs\JobInterface;
+use Samynw\MonitoringManagerBundle\Service\Jobs\JobInterface;
 use Pimcore\Tool;
 use Symfony\Component\Routing\RouterInterface;
 
@@ -10,7 +10,7 @@ use Symfony\Component\Routing\RouterInterface;
  * Class Job
  * View model for easy use in Twig template
  *
- * @package MonitoringManagerBundle\Model\View
+ * @package Samynw\MonitoringManagerBundle\Model\View
  */
 class Task
 {

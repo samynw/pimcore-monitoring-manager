@@ -1,10 +1,10 @@
 <?php
 
-namespace MonitoringManagerBundle\Command;
+namespace Samynw\MonitoringManagerBundle\Command;
 
-use MonitoringManagerBundle\Config\MonitoringConfig;
-use MonitoringManagerBundle\Service\Listing\EnabledJobs;
-use MonitoringManagerBundle\ValueObject\Config\Entry;
+use Samynw\MonitoringManagerBundle\Config\MonitoringConfig;
+use Samynw\MonitoringManagerBundle\Service\Listing\EnabledJobs;
+use Samynw\MonitoringManagerBundle\ValueObject\Config\Entry;
 use Pimcore\Console\AbstractCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

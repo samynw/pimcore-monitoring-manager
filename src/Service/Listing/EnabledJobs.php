@@ -1,10 +1,10 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Listing;
+namespace Samynw\MonitoringManagerBundle\Service\Listing;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use MonitoringManagerBundle\Config\MonitoringConfig;
-use MonitoringManagerBundle\ValueObject\Config\Entry;
+use Samynw\MonitoringManagerBundle\Config\MonitoringConfig;
+use Samynw\MonitoringManagerBundle\ValueObject\Config\Entry;
 
 class EnabledJobs
 {
