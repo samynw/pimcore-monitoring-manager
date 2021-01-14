@@ -1,9 +1,9 @@
 <?php
 
-namespace MonitoringManagerBundle\Controller;
+namespace Samynw\MonitoringManagerBundle\Controller;
 
-use MonitoringManagerBundle\Service\Jobs\JobInterface;
-use MonitoringManagerBundle\Service\Listing\EnabledJobs;
+use Samynw\MonitoringManagerBundle\Service\Jobs\JobInterface;
+use Samynw\MonitoringManagerBundle\Service\Listing\EnabledJobs;
 use Pimcore\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;

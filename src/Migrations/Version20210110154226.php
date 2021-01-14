@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle\Migrations;
+namespace Samynw\MonitoringManagerBundle\Migrations;
 
 use Doctrine\DBAL\Schema\Schema;
 use Pimcore\Migrations\Migration\AbstractPimcoreMigration;

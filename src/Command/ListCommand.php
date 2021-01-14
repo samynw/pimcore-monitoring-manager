@@ -1,12 +1,12 @@
 <?php
 
-namespace MonitoringManagerBundle\Command;
+namespace Samynw\MonitoringManagerBundle\Command;
 
-use MonitoringManagerBundle\Service\Listing\AvailableJobs;
-use MonitoringManagerBundle\Service\Listing\EnabledJobs;
-use MonitoringManagerBundle\Service\Status\Failure;
-use MonitoringManagerBundle\Service\Status\StatusInterface;
-use MonitoringManagerBundle\Service\Status\Success;
+use Samynw\MonitoringManagerBundle\Service\Listing\AvailableJobs;
+use Samynw\MonitoringManagerBundle\Service\Listing\EnabledJobs;
+use Samynw\MonitoringManagerBundle\Service\Status\Failure;
+use Samynw\MonitoringManagerBundle\Service\Status\StatusInterface;
+use Samynw\MonitoringManagerBundle\Service\Status\Success;
 use Pimcore\Console\AbstractCommand;
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;

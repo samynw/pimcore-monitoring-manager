@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Status;
+namespace Samynw\MonitoringManagerBundle\Service\Status;
 
 use Symfony\Component\HttpFoundation\Response;
 
@@ -9,7 +9,7 @@ use Symfony\Component\HttpFoundation\Response;
  *
  * You're probably not gonna use this one.
  *
- * @package MonitoringManagerBundle\Service\Status
+ * @package Samynw\MonitoringManagerBundle\Service\Status
  */
 class Teapot extends Failure
 {

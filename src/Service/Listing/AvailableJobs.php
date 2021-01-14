@@ -1,9 +1,9 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Listing;
+namespace Samynw\MonitoringManagerBundle\Service\Listing;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use MonitoringManagerBundle\Service\Jobs\JobInterface;
+use Samynw\MonitoringManagerBundle\Service\Jobs\JobInterface;
 
 class AvailableJobs
 {

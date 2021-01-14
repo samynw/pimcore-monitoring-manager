@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle\ValueObject\Config;
+namespace Samynw\MonitoringManagerBundle\ValueObject\Config;
 
 class Entry
 {

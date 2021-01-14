@@ -1,9 +1,9 @@
 <?php
 
-namespace MonitoringManagerBundle\Config;
+namespace Samynw\MonitoringManagerBundle\Config;
 
 use Doctrine\Common\Collections\ArrayCollection;
-use MonitoringManagerBundle\ValueObject\Config\Entry;
+use Samynw\MonitoringManagerBundle\ValueObject\Config\Entry;
 use Psr\Log\LoggerInterface;
 use Symfony\Component\Yaml\Exception\ParseException;
 

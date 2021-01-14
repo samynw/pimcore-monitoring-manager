@@ -1,8 +1,8 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Jobs;
+namespace Samynw\MonitoringManagerBundle\Service\Jobs;
 
-use MonitoringManagerBundle\Service\Status\StatusInterface;
+use Samynw\MonitoringManagerBundle\Service\Status\StatusInterface;
 
 interface JobInterface
 {

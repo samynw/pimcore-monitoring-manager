@@ -1,9 +1,9 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Jobs;
+namespace Samynw\MonitoringManagerBundle\Service\Jobs;
 
-use MonitoringManagerBundle\Service\Status\StatusInterface;
-use MonitoringManagerBundle\Service\Status\Teapot;
+use Samynw\MonitoringManagerBundle\Service\Status\StatusInterface;
+use Samynw\MonitoringManagerBundle\Service\Status\Teapot;
 
 class CoffeeMaker implements JobInterface
 {

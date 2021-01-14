@@ -11,42 +11,42 @@ services:
 
     # controllers are imported separately to make sure they're public
     # and have a tag that allows actions to type-hint services
-    MonitoringManagerBundle\Controller\:
+    Samynw\MonitoringManagerBundle\Controller\:
         resource: '../../Controller'
         public: true
         tags: ['controller.service_arguments']
 
 # add more services, or override services that need manual wiring
-#    MonitoringManagerBundle\ExampleClass:
+#    Samynw\MonitoringManagerBundle\ExampleClass:
 #        arguments:
 #            - "@service_id"
 #            - "plain_value"
 #            - "%parameter%"
 
-    MonitoringManagerBundle\Installer:
+    Samynw\MonitoringManagerBundle\Installer:
         public: true
         arguments:
             $bundle: "@=service('kernel').getBundle('MonitoringManagerBundle')"
 
     # auto-register all commands as services
-    MonitoringManagerBundle\Command\:
+    Samynw\MonitoringManagerBundle\Command\:
         resource: '../../Command/*'
         tags: ['console.command']
 
-    MonitoringManagerBundle\Service\Jobs\PackageChecker:
+    Samynw\MonitoringManagerBundle\Service\Jobs\PackageChecker:
         arguments:
             $projectRoot: "%kernel.project_dir%"
         tags: [ 'monitoring_manager.job' ]
         public: true
 
-    MonitoringManagerBundle\Service\Jobs\CoffeeMaker:
+    Samynw\MonitoringManagerBundle\Service\Jobs\CoffeeMaker:
         tags: [ 'monitoring_manager.job' ]
         public: true
 
-    MonitoringManagerBundle\Service\Listing\AvailableJobs:
+    Samynw\MonitoringManagerBundle\Service\Listing\AvailableJobs:
         arguments:
             $jobs: !tagged_iterator monitoring_manager.job
 
-    MonitoringManagerBundle\Service\Listing\EnabledJobs: ~
-    MonitoringManagerBundle\Config\Dao: ~
-    MonitoringManagerBundle\Config\MonitoringConfig: ~
+    Samynw\MonitoringManagerBundle\Service\Listing\EnabledJobs: ~
+    Samynw\MonitoringManagerBundle\Config\Dao: ~
+    Samynw\MonitoringManagerBundle\Config\MonitoringConfig: ~

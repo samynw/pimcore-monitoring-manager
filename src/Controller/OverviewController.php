@@ -1,10 +1,10 @@
 <?php
 
-namespace MonitoringManagerBundle\Controller;
+namespace Samynw\MonitoringManagerBundle\Controller;
 
-use MonitoringManagerBundle\Model\View\Task;
-use MonitoringManagerBundle\Service\Listing\EnabledJobs;
-use MonitoringManagerBundle\ValueObject\Config\Entry;
+use Samynw\MonitoringManagerBundle\Model\View\Task;
+use Samynw\MonitoringManagerBundle\Service\Listing\EnabledJobs;
+use Samynw\MonitoringManagerBundle\ValueObject\Config\Entry;
 use Pimcore\Controller\FrontendController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;

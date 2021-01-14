@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle\Config;
+namespace Samynw\MonitoringManagerBundle\Config;
 
 use Pimcore\Config;
 use Symfony\Component\Filesystem\Exception\IOException;

@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle;
+namespace Samynw\MonitoringManagerBundle;
 
 use Doctrine\DBAL\Migrations\Version;
 use Doctrine\DBAL\Schema\Schema;

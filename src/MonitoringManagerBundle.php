@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle;
+namespace Samynw\MonitoringManagerBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 use Pimcore\Extension\Bundle\Installer\InstallerInterface;
@@ -9,6 +9,11 @@ use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 class MonitoringManagerBundle extends AbstractPimcoreBundle
 {
     use PackageVersionTrait;
+
+    public function getNiceName()
+    {
+        return 'Monitoring Manager';
+    }
 
     /**
      * {@inheritdoc}

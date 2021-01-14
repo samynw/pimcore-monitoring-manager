@@ -1,6 +1,6 @@
 <?php
 
-namespace MonitoringManagerBundle\Service\Status;
+namespace Samynw\MonitoringManagerBundle\Service\Status;
 
 abstract class AbstractStatus implements StatusInterface
 {

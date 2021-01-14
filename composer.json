@@ -1,6 +1,6 @@
 {
     "name": "samynw/pimcore-monitoring-manager",
-    "description": "This bundle sets up endpoints for monitoring tasks",
+    "description": "Provides an easy tool for using your monitoring software to monitor jobs within a Pimcore application",
     "type": "pimcore-bundle",
     "require": {
         "pimcore/pimcore": "^6.8.0"
@@ -14,18 +14,18 @@
     ],
     "autoload": {
       "psr-4": {
-        "MonitoringManagerBundle\\": "src/"
+        "Samynw\\MonitoringManagerBundle\\": "src/"
       }
     },
     "autoload-dev": {
         "psr-4": {
-            "MonitoringManagerBundle\\Tests\\": "tests/"
+            "Samynw\\MonitoringManagerBundle\\Tests\\": "tests/"
         }
     },
     "extra": {
         "pimcore": {
             "bundles": [
-                "MonitoringManagerBundle\\MonitoringManagerBundle"
+                "Samynw\\MonitoringManagerBundle\\MonitoringManagerBundle"
             ]
         }
     },

@@ -1,12 +1,12 @@
 <?php
 
-namespace MonitoringManagerBundle\Command;
+namespace Samynw\MonitoringManagerBundle\Command;
 
-use MonitoringManagerBundle\Service\Jobs\JobInterface;
-use MonitoringManagerBundle\Service\Listing\EnabledJobs;
-use MonitoringManagerBundle\Service\Status\StatusInterface;
-use MonitoringManagerBundle\Service\Status\Success;
-use MonitoringManagerBundle\ValueObject\Config\Entry;
+use Samynw\MonitoringManagerBundle\Service\Jobs\JobInterface;
+use Samynw\MonitoringManagerBundle\Service\Listing\EnabledJobs;
+use Samynw\MonitoringManagerBundle\Service\Status\StatusInterface;
+use Samynw\MonitoringManagerBundle\Service\Status\Success;
+use Samynw\MonitoringManagerBundle\ValueObject\Config\Entry;
 use Pimcore\Console\AbstractCommand;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
