@@ -14,18 +14,18 @@
     ],
     "autoload": {
       "psr-4": {
-        "MonitoringManagerBundle\\": "src/"
+        "Samynw\\MonitoringManagerBundle\\": "src/"
       }
     },
     "autoload-dev": {
         "psr-4": {
-            "MonitoringManagerBundle\\Tests\\": "tests/"
+            "Samynw\\MonitoringManagerBundle\\Tests\\": "tests/"
         }
     },
     "extra": {
         "pimcore": {
             "bundles": [
-                "MonitoringManagerBundle\\MonitoringManagerBundle"
+                "Samynw\\MonitoringManagerBundle\\MonitoringManagerBundle"
             ]
         }
     },
