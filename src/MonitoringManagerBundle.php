@@ -39,7 +39,7 @@ class MonitoringManagerBundle extends AbstractPimcoreBundle
     public function getJsPaths()
     {
         return [
-            '/bundles/samynw/monitoringmanager/js/pimcore/startup.js'
+            '/bundles/monitoringmanager/js/pimcore/startup.js'
         ];
     }
 }
